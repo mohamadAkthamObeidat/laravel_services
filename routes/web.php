@@ -132,5 +132,8 @@ Route::get('/dashboard', 'ClientController@dashboard');
 Route::get('/dashboard/create', 'ClientController@create');
 Route::post('/dashboard/save', 'ClientController@save');
 Route::get('/services/{service}', 'ClientController@show');
+Route::get('/service_details/{service}', 'ServiceController@details');
+Route::get('/', 'ServiceController@index');
+Route::post('/service_details/{service}', 'ServiceController@create');
 
 //Route::resource('home', 'ClientController');
